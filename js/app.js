@@ -4119,7 +4119,6 @@
         const value = values[handle];
         if (handle === 0) priceMin.innerHTML = value; else priceMax.innerHTML = value;
     }));
-    window["FLS"] = true;
     menuInit();
     tabs();
     headerScroll();
