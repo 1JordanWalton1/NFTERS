@@ -1,6 +1,6 @@
-# New Portfolio
+# NFTERS
 
-Personal Portfolio Web-Site
+NFT Marketplace Main Page
 
 Сделал: <a href="https://github.com/1JordanWalton1">Jordan Walton</a>
 
