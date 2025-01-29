@@ -1,0 +1,3022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>NFTERS</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20250129110508">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css?_v=20250129110508">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js?_v=20250129110508"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">
+						<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+							<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+						</svg>
+					</button>
+					<div class="popup__inner">
+						<h2 class="popup__title title">Filters</h2>
+						<form id="filter-form" class="filter">
+							<div class="filter__group">
+								<label class="filter__label filter__label_margin" for="price-range">Price range</label>
+								<div class="filter__price" id="price-range"></div>
+								<div class="filter__price-values">
+									<span id="price-min"></span> - <span id="price-max"></span>
+								</div>
+							</div>
+
+							<div class="filter__group">
+								<label class="filter__label" for="creator">Creator</label>
+								<input class="filter__creator" type="text" id="creator" placeholder="Enter creator name">
+							</div>
+							<div class="filter__group">
+								<label class="filter__label" for="date">Date</label>
+								<input class="filter__date" type="date" id="date">
+							</div>
+							<button class="filter__btn btn" type="button" id="apply-filters" data-close>Apply Filters</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container">
+
+				<a href="#!" class="header__logo" aria-label="Go to homepage">
+					<img src="img/header/logo.svg" alt="Company Logotype" />
+				</a>
+
+				<div class="header__menu menu" role="navigation" aria-label="Main Navigation">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#!" class="menu__link">Marketplace</a></li>
+							<li class="menu__item"><a href="#!" class="menu__link">Resource</a></li>
+							<li class="menu__item"><a href="#!" class="menu__link">About</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="header__actions">
+					<form action="#" role="search" class="header__search search-header">
+						<label for="search-input" class="search-header__label">search</label>
+						<input id="search-input" autocomplete="off" type="search" class="search-header__input" placeholder="search" aria-label="Search input field">
+						<button type="submit" class="search-header__button _icon-header-search" aria-label="Start search">
+						</button>
+					</form>
+					<div class="header__btns" data-da=".menu__list,767.98,99">
+						<button type="button" class="header__btn">upload</button>
+						<button type="button" class="header__btn header__btn_transparent">connect wallet</button>
+					</div>
+					<button type="button" class="menu__icon icon-menu" aria-label="Toggle navigation menu"><span></span></button>
+				</div>
+
+			</div>
+		</header>
+		<main class="page">
+
+			<section class="hero" aria-label="Hero Section" data-watch>
+				<div class="hero__container">
+					<div class="hero__inner">
+
+						<div class="hero__content">
+							<h1 class="hero__title">Discover, and collect Digital Art NFTs</h1>
+							<div class="hero__text">
+								<p>
+									Digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy,
+									Sell, and discover exclusive digital
+									assets.
+								</p>
+							</div>
+							<a class="hero__btn btn" href="#!" aria-label="Explore now and discover our products">Explore Now</a>
+
+							<ul class="hero__info info-hero" aria-label="Key statistics">
+								<li class="info-hero__item">
+									<div class="info-hero__number">98k+</div>
+									<div class="info-hero__descr">
+										Artwork
+									</div>
+								</li>
+								<li class="info-hero__item">
+									<div class="info-hero__number">12k+</div>
+									<div class="info-hero__descr">
+										auction
+									</div>
+								</li>
+								<li class="info-hero__item">
+									<div class="info-hero__number">15k+</div>
+									<div class="info-hero__descr">
+										artist
+									</div>
+								</li>
+							</ul>
+
+						</div>
+
+						<div class="hero__card card-hero" aria-label="Featured NFT card">
+							<div class="card-hero__decor">
+								<img src="img/hero/icon.svg" alt="Decorative icon for NFT card" aria-hidden="true" />
+							</div>
+							<div class="card-hero__slider swiper" role="region" aria-label="Featured NFT slider">
+								<div class="card-hero__wrapper swiper-wrapper">
+									<div class="card-hero__slide swiper-slide hero-slide" role="group" aria-label="NFT item 1 of 3">
+
+										<div class="hero-slide__inner">
+											<div class="hero-slide__top">
+												<h3 class="hero-slide__title">Abstr Gradient NFT</h3>
+												<div class="hero-slide__author">
+													<img class="hero-slide__author-img" src="img/hero/author-photo.webp" alt="Author profile image for Arkhan17">
+													<div class="hero-slide__author-nickname">
+														Arkhan17
+													</div>
+
+												</div>
+											</div>
+
+											<div class="hero-slide__bottom">
+												<div class="hero-slide__left">
+													<div class="hero-slide__current">
+														Current Bid
+													</div>
+													<div class="hero-slide__quantity _icon-etherium">0.25 ETH</div>
+												</div>
+												<div class="hero-slide__right">
+													<div class="hero-slide__text">Ends in</div>
+													<div class="hero-slide__timer" id="slide-timer">
+														12<span>h</span> 43<span>m</span> 42s
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="card-hero__slide swiper-slide hero-slide" role="group" aria-label="NFT item 2 of 3">
+
+										<div class="hero-slide__inner hero-slide__inner_bg2">
+											<div class="hero-slide__top">
+												<h3 class="hero-slide__title">Abstr Gradient NFT</h3>
+												<div class="hero-slide__author">
+													<img class="hero-slide__author-img" src="img/hero/author-photo.webp" alt="Author profile image for Arkhan17">
+													<div class="hero-slide__author-nickname">
+														Arkhan17
+													</div>
+
+												</div>
+											</div>
+
+
+											<div class="hero-slide__bottom">
+												<div class="hero-slide__left">
+													<div class="hero-slide__current">
+														Current Bid
+													</div>
+													<div class="hero-slide__quantity _icon-etherium">0.25 ETH</div>
+												</div>
+												<div class="hero-slide__right">
+													<div class="hero-slide__text">Ends in</div>
+													<div class="hero-slide__timer" id="slide-timer">
+														12<span>h</span> 43<span>m</span> 42s
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="card-hero__slide swiper-slide hero-slide" role="group" aria-label="NFT item 3 of 3">
+
+										<div class="hero-slide__inner hero-slide__inner_bg3">
+											<div class="hero-slide__top">
+												<h3 class="hero-slide__title">Abstr Gradient NFT</h3>
+												<div class="hero-slide__author">
+													<img class="hero-slide__author-img" src="img/hero/author-photo.webp" alt="Author profile image for Arkhan17">
+													<div class="hero-slide__author-nickname">
+														Arkhan17
+													</div>
+
+												</div>
+											</div>
+
+											<div class="hero-slide__bottom">
+												<div class="hero-slide__left">
+													<div class="hero-slide__current">
+														Current Bid
+													</div>
+													<div class="hero-slide__quantity _icon-etherium">0.25 ETH</div>
+												</div>
+												<div class="hero-slide__right">
+													<div class="hero-slide__text">Ends in</div>
+													<div class="hero-slide__timer" id="slide-timer">
+														12<span>h</span> 43<span>m</span> 42s
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+			<section class="advantages" aria-label="Advantages of our platform" data-watch>
+				<div class="advantages__container">
+					<div class="advantages__inner">
+						<h3 class="advantages__title title">The amazing NFT art of the world here</h3>
+						<ul class="advantages__list" aria-label="List of Advantages">
+							<li class="advantages__list-item">
+								<h4 class="advantages__list-title">fast transaction</h4>
+								<div class="advantages__text">
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, velit repudiandae
+										eligendi officiis ex aliquid itaque eaque facere facilis, doloremque autem
+										deleniti! Hic, aliquid voluptate? Voluptatum libero reiciendis quas aspernatur.
+									</p>
+								</div>
+							</li>
+							<li class="advantages__list-item">
+								<h4 class="advantages__list-title">Growth Transaction</h4>
+								<div class="advantages__text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam etiam viverra
+										tellus
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="collection" aria-label="NFT Collection Overview" data-watch>
+				<div class="collection__container">
+					<div class="collection__inner">
+						<div class="collection__column collection__column_1" aria-label="Featured NFT">
+							<div class="collection__img">
+								<img src="img/collection/big-image.webp" alt="Featured NFT artwork" />
+							</div>
+							<div class="collection__bottom bottom-collection">
+
+								<div class="bottom-collection__left">
+									<div class="bottom-collection__avatar">
+										<img src="img/collection/ava-big.webp" alt="Author avatar for The Futr Abstr" />
+									</div>
+									<div class="bottom-collection__info">
+										<div class="bottom-collection__name">
+											The Futr Abstr
+										</div>
+										<div class="bottom-collection__details">
+											10 in the stock
+										</div>
+									</div>
+								</div>
+
+								<div class="bottom-collection__right">
+									<div class="bottom-collection__text">Highest Bid</div>
+									<div class="bottom-collection__quantity _icon-etherium">
+										0.25 ETH
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="collection__column" aria-label="NFT Items list">
+							<ul class="collection__cards cards-collection">
+								<li class="cards-collection__item" role="listitem" aria-label="NFT item 1">
+									<div class="cards-collection__img">
+										<img src="img/collection/sm-1.webp" alt="NFT artwork" />
+									</div>
+									<div class="cards-collection__about">
+										<div class="cards-collection__name">The Futr Abstr</div>
+										<div class="cards-collection__info">
+											<div class="cards-collection__avatar">
+												<img src="img/collection/ava-small.webp" alt="Author avatar" />
+											</div>
+											<div class="cards-collection__eth _icon-etherium">
+												0.25 ETH
+											</div>
+											<div class="cards-collection__quantity">1 of 8</div>
+										</div>
+										<button type="button" class="cards-collection__btn btn" aria-label="Place a bid for NFT item 1">place a bid</button>
+									</div>
+								</li>
+								<li class="cards-collection__item" role="listitem" aria-label="NFT item 2">
+									<div class="cards-collection__img">
+										<img src="img/collection/sm-2.webp" alt="NFT artwork" />
+									</div>
+									<div class="cards-collection__about">
+										<div class="cards-collection__name">The Futr Abstr</div>
+										<div class="cards-collection__info">
+											<div class="cards-collection__avatar">
+												<img src="img/collection/ava-small.webp" alt="Author avatar" />
+											</div>
+											<div class="cards-collection__eth _icon-etherium">
+												0.25 ETH
+											</div>
+											<div class="cards-collection__quantity">1 of 8</div>
+										</div>
+										<button type="button" class="cards-collection__btn btn" aria-label="Place a bid for NFT item 2">place a bid</button>
+									</div>
+								</li>
+								<li class="cards-collection__item" role="listitem" aria-label="NFT item 3">
+									<div class="cards-collection__img">
+										<img src="img/collection/sm-3.webp" alt="NFT artwork" />
+									</div>
+									<div class="cards-collection__about">
+										<div class="cards-collection__name">The Futr Abstr</div>
+										<div class="cards-collection__info">
+											<div class="cards-collection__avatar">
+												<img src="img/collection/ava-small.webp" alt="Author avatar" />
+											</div>
+											<div class="cards-collection__eth _icon-etherium">
+												0.25 ETH
+											</div>
+											<div class="cards-collection__quantity">1 of 8</div>
+										</div>
+										<button type="button" class="cards-collection__btn btn" aria-label="Place a bid for NFT item 3">place a bid</button>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="collection__column top-collection" aria-label="Top Collections">
+							<h4 class="top-collection__title">Top Collections over</h4>
+							<div class="top-collection__term">Last 7 days</div>
+							<ul class="top-collection__list">
+								<li class="top-collection__list-item">
+									<a href="#!" class="top-collection__avatar">
+										<img src="img/collection/coll-ava.webp" alt="Avatar for CryptoFunks collection" />
+									</a>
+									<div class="top-collection__parts">
+										<a class="top-collection__name" href="#!">CryptoFunks</a>
+										<div class="top-collection__quantity _icon-etherium">19,769.39</div>
+									</div>
+									<div class="top-collection__percents">
+										+26.52%
+									</div>
+								</li>
+								<li class="top-collection__list-item">
+									<a href="#!" class="top-collection__avatar">
+										<img src="img/collection/coll-ava.webp" alt="Avatar for CryptoFunks collection" />
+									</a>
+									<div class="top-collection__parts">
+										<a class="top-collection__name" href="#!">CryptoFunks</a>
+										<div class="top-collection__quantity _icon-etherium">19,769.39</div>
+									</div>
+									<div class="top-collection__percents top-collection__percents_red">
+										+26.52%
+									</div>
+								</li>
+								<li class="top-collection__list-item">
+									<a href="#!" class="top-collection__avatar">
+										<img src="img/collection/coll-ava.webp" alt="Avatar for CryptoFunks collection" />
+									</a>
+									<div class="top-collection__parts">
+										<a class="top-collection__name" href="#!">CryptoFunks</a>
+										<div class="top-collection__quantity _icon-etherium">19,769.39</div>
+									</div>
+									<div class="top-collection__percents">
+										+26.52%
+									</div>
+								</li>
+								<li class="top-collection__list-item">
+									<a href="#!" class="top-collection__avatar">
+										<img src="img/collection/coll-ava.webp" alt="Avatar for CryptoFunks collection" />
+									</a>
+									<div class="top-collection__parts">
+										<a class="top-collection__name" href="#!">CryptoFunks</a>
+										<div class="top-collection__quantity _icon-etherium">19,769.39</div>
+									</div>
+									<div class="top-collection__percents">
+										+26.52%
+									</div>
+								</li>
+								<li class="top-collection__list-item">
+									<a href="#!" class="top-collection__avatar">
+										<img src="img/collection/coll-ava.webp" alt="Avatar for CryptoFunks collection" />
+									</a>
+									<div class="top-collection__parts">
+										<a class="top-collection__name" href="#!">CryptoFunks</a>
+										<div class="top-collection__quantity _icon-etherium">19,769.39</div>
+									</div>
+									<div class="top-collection__percents top-collection__percents_red">
+										+26.52%
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="featured" aria-label="Featured NFT Collections" data-watch>
+				<div class="featured__container">
+					<h2 class="featured__title title">Collection Featured NFTs</h2>
+					<ul class="featured__cards" aria-label="List of featured NFT collections">
+						<li class="featured__card card-featured" role="listitem" aria-label="Featured collection 1">
+							<div class="card-featured__gallery gallery-card">
+								<img class="gallery-card__big-photo" src="img/featured/big-1.webp" alt="Large preview of featured NFT collection" />
+								<img class="gallery-card__sm-photo gallery-card__sm-photo_1" src="img/featured/sm-1.webp" alt="Small preview 1 of featured NFT collection" />
+								<img class="gallery-card__sm-photo gallery-card__sm-photo_2" src="img/featured/sm-1.webp" alt="Small preview 2 of featured NFT collection" />
+								<img class="gallery-card__sm-photo gallery-card__sm-photo_3" src="img/featured/sm-1.webp" alt="Small preview 3 of featured NFT collection" />
+							</div>
+							<div class="card-featured__bottom">
+								<h4 class="card-featured__title">Amazing Collection</h4>
+								<div class="card-featured__details">
+									<div class="card-featured__info">
+										<div class="card-featured__avatar">
+											<img src="img/collection/ava-small.webp" alt="Author avatar" />
+										</div>
+										<div class="card-featured__author">by arkhan</div>
+									</div>
+									<div class="card-featured__quantity">
+										total 54 items
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="featured__card card-featured" role="listitem" aria-label="Featured collection 2">
+							<div class="card-featured__gallery gallery-card">
+								<img class="gallery-card__big-photo" src="img/featured/big-1.webp" alt="Large preview of featured NFT collection" />
+								<img class="gallery-card__sm-photo gallery-card__sm-photo_1" src="img/featured/sm-1.webp" alt="Small preview 1 of featured NFT collection" />
+								<img class="gallery-card__sm-photo gallery-card__sm-photo_2" src="img/featured/sm-1.webp" alt="Small preview 2 of featured NFT collection" />
+								<img class="gallery-card__sm-photo gallery-card__sm-photo_3" src="img/featured/sm-1.webp" alt="Small preview 3 of featured NFT collection" />
+							</div>
+							<div class="card-featured__bottom">
+								<h4 class="card-featured__title">Amazing Collection</h4>
+								<div class="card-featured__details">
+									<div class="card-featured__info">
+										<div class="card-featured__avatar">
+											<img src="img/collection/ava-small.webp" alt="Author avatar" />
+										</div>
+										<div class="card-featured__author">by arkhan</div>
+									</div>
+									<div class="card-featured__quantity">
+										total 54 items
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="featured__card card-featured" role="listitem" aria-label="Featured collection 3">
+							<div class="card-featured__gallery gallery-card">
+								<img class="gallery-card__big-photo" src="img/featured/big-1.webp" alt="Large preview of featured NFT collection" />
+								<img class="gallery-card__sm-photo gallery-card__sm-photo_1" src="img/featured/sm-1.webp" alt="Small preview 1 of featured NFT collection" />
+								<img class="gallery-card__sm-photo gallery-card__sm-photo_2" src="img/featured/sm-1.webp" alt="Small preview 2 of featured NFT collection" />
+								<img class="gallery-card__sm-photo gallery-card__sm-photo_3" src="img/featured/sm-1.webp" alt="Small preview 3 of featured NFT collection" />
+							</div>
+							<div class="card-featured__bottom">
+								<h4 class="card-featured__title">Amazing Collection</h4>
+								<div class="card-featured__details">
+									<div class="card-featured__info">
+										<div class="card-featured__avatar">
+											<img src="img/collection/ava-small.webp" alt="Author avatar" />
+										</div>
+										<div class="card-featured__author">by arkhan</div>
+									</div>
+									<div class="card-featured__quantity">
+										total 54 items
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+
+			<section class="suggestion" aria-label="Suggestion to create and sell NFTs" data-watch>
+				<div class="suggestion__container">
+					<div class="suggestion__composition composition" aria-label="NFT artwork previews">
+						<div class="composition__photo-1" aria-label="NFT preview 1">
+							<img src="img/suggestion/big-01.webp" alt="NFT artwork preview 1" />
+							<div class="composition__avatar">
+								<img src="img/suggestion/avatar-01.webp" alt="Artist avatar for NFT preview 1" />
+							</div>
+						</div>
+						<div class="composition__photo-2" aria-label="NFT preview 2">
+							<img src="img/suggestion/big-02.webp" alt="NFT artwork preview 2" />
+							<div class="composition__avatar">
+								<img src="img/suggestion/avatar-01.webp" alt="Artist avatar for NFT preview 2" />
+							</div>
+						</div>
+						<div class="composition__photo-3" aria-label="NFT preview 3">
+							<img src="img/suggestion/big-03.webp" alt="NFT artwork preview 3" />
+							<div class="composition__avatar">
+								<img src="img/suggestion/avatar-01.webp" alt="Artist avatar for NFT preview 3" />
+							</div>
+						</div>
+					</div>
+					<div class="suggestion__info">
+						<div class="suggestion__title title title_medium">Create and sell your NFTs</div>
+						<div class="suggestion__text">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi ac phasellus placerat
+								a pellentesque tellus sed
+								egestas. Et tristique dictum sit tristique sed non. Lacinia lorem id consectetur pretium
+								diam ut. Pellentesque eu sit
+								blandit fringilla risus faucibus.
+							</p>
+						</div>
+						<button class="suggestion__btn btn" type="button" aria-label="Sign up now to create and sell your NFTs">sign
+							up now</button>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="discover">
+				<div class="discover__container">
+					<h2 class="discover__title title title_large">Discover more NFTs</h2>
+					<div data-tabs data-tabs-animate="1000" class="discover__tabs tabs-discover">
+						<div class="tabs-discover__top">
+							<nav data-tabs-titles class="tabs-discover__navigation">
+								<button type="button" class="tabs-discover__title _tab-active">All categories</button>
+								<button type="button" class="tabs-discover__title">Art</button>
+								<button type="button" class="tabs-discover__title">Celebrities</button>
+								<button type="button" class="tabs-discover__title">Gaming</button>
+								<button type="button" class="tabs-discover__title">Sport</button>
+								<button type="button" class="tabs-discover__title">Music</button>
+								<button type="button" class="tabs-discover__title">Crypto</button>
+							</nav>
+							<div class="tabs-discover__filters filters-tabs">
+								<button class="filters-tabs__button _icon-filter" type="button" id="filter-btn" data-popup="#popup">
+									<span>All Filters</span></button>
+							</div>
+						</div>
+						<div data-tabs-body class="tabs-discover__content">
+							<div class="tabs-discover__body body-discover">
+								<div class="body-discover__cards">
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-discover__body body-discover">
+								<div class="body-discover__cards">
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="tabs-discover__body body-discover">
+								<div class="body-discover__cards">
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-discover__body body-discover">
+								<div class="body-discover__cards">
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-discover__body body-discover">
+								<div class="body-discover__cards">
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-discover__body body-discover">
+								<div class="body-discover__cards">
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="tabs-discover__body body-discover">
+								<div class="body-discover__cards">
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+									<div class="body-discover__card">
+										<div class="body-discover__inner">
+											<div class="body-discover__top">
+												<a class="body-discover__img" href="#!">
+													<img src="img/discover/card-img-1.webp" alt="Image">
+												</a>
+												<ul class="body-discover__avatars">
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-01.webp" alt="Image">
+													</li>
+													<li class="body-discover__avatar">
+														<img src="img/discover/avatar-02.webp" alt="Image">
+													</li>
+												</ul>
+											</div>
+											<div class="body-discover__info">
+												<h3 class="body-discover__title">
+													<a href="#!" class="body-discover__link">ArtCrypto</a>
+												</h3>
+												<div class="body-discover__details">
+													<div class="body-discover__quantity _icon-etherium">
+														0.25 ETH
+													</div>
+													<div class="body-discover__number">1 of 321</div>
+												</div>
+											</div>
+											<div class="body-discover__bottom">
+												<div class="body-discover__lefttime">
+													3<span>h</span> 50<span>m</span> 2<span>s</span> left
+												</div>
+												<button class="body-discover__button" type="button">Place a bid</button>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="discover__elem">
+						<button type="button" class="discover__showmore">
+							More NFTs
+						</button>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer" aria-label="Footer with site information and links">
+			<div class="footer__container">
+				<div class="footer__inner">
+					<div class="footer__info info-footer">
+						<a class="info-footer__logo" href="#!" aria-label="Go to homepage">
+							<svg width="107" height="19" viewBox="0 0 107 19" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+								<path d="M0.7 18H6.1V8.92H6.6L12.32 18H18.54V1.2H13.14V10.28H12.64L7.06 1.2H0.7V18ZM19.9422 18H25.4822V12.1H34.6222V8.1H25.4822V5.82H35.0422V1.2H19.9422V18ZM53.9622 1.2H36.3422V5.82H42.3822V18H47.9222V5.82H53.9622V1.2ZM55.2625 18H70.4025V13.56H60.8025V11.42H70.0425V7.78H60.8025V5.64H70.4025V1.2H55.2625V18ZM89.2694 18L86.2694 12.48C87.6894 11.48 88.7094 9.88 88.7094 7.62C88.7094 3.2 86.0894 1.2 81.4294 1.2H71.8094V18H77.3494V13.66H81.5494L83.8294 18H89.2694ZM77.3494 5.8H81.0494C82.4494 5.8 83.1694 6.48 83.1694 7.66C83.1694 8.84 82.4494 9.52 81.0494 9.52H77.3494V5.8ZM97.7625 18.56C103.523 18.58 106.363 16.76 106.363 13.1C106.363 8.5 101.783 8.4 98.4425 7.84L96.6625 7.54C95.3825 7.34 95.0825 6.76 95.0825 6.28C95.0825 5.52 95.8425 4.96 97.6825 4.96C99.8025 4.96 100.743 5.66 100.943 6.78H105.882C105.983 1.98 102.622 0.639999 97.8025 0.639999C92.4625 0.639999 89.7625 2.68 89.7625 6C89.7625 10.3 93.5825 10.68 96.7625 11.2L98.9225 11.54C100.563 11.78 100.863 12.34 100.863 12.88C100.863 13.66 99.8825 14.26 97.7625 14.24C95.3625 14.22 94.4025 13.52 94.3425 12.38H89.3625C89.2225 16.74 91.9625 18.54 97.7625 18.56Z" fill="black" />
+							</svg>
+						</a>
+						<div class="info-footer__descr">
+							<p>
+								The world’s first and largest digital marketplace for crypto collectibles and non-fungible
+								tokens (NFTs). Buy, sell, and
+								discover exclusive digital items.
+							</p>
+						</div>
+						<ul class="info-footer__social social" aria-label="Social media links">
+							<li class="social__item">
+								<a href="#!" class="social__link" aria-label="Go to our Facebook page">
+									<img src="img/footer/fbook.svg" alt="Facebook logo" />
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="#!" class="social__link" aria-label="Go to our Twitter page">
+									<img src="img/footer/twitter.svg" alt="Twitter logo" />
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="#!" class="social__link" aria-label="Go to our LinkedIn page">
+									<img src="img/footer/linkedin.svg" alt="LinkedIn logo" />
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__column footer__column_1" aria-label="Marketplace links">
+						<div class="footer__title">
+							Market Place
+						</div>
+						<ul class="footer__list">
+							<li class="footer__list-item"><a href="#!" class="footer__list-link">All NFTs
+								</a></li>
+							<li class="footer__list-item"><a href="#!" class="footer__list-link">New
+								</a></li>
+							<li class="footer__list-item"><a href="#!" class="footer__list-link">Art
+								</a></li>
+							<li class="footer__list-item"><a href="#!" class="footer__list-link">Sports
+								</a></li>
+							<li class="footer__list-item"><a href="#!" class="footer__list-link">Utility
+								</a></li>
+							<li class="footer__list-item"><a href="#!" class="footer__list-link">Music
+								</a></li>
+							<li class="footer__list-item"><a href="#!" class="footer__list-link">Domain Name
+								</a></li>
+						</ul>
+					</div>
+					<div class="footer__column footer__column_2" aria-label="My Account links">
+						<div class="footer__title">
+							My Account
+						</div>
+						<ul class="footer__list">
+							<li class="footer__list-item"><a href="#!" class="footer__list-link">Profile
+								</a></li>
+							<li class="footer__list-item"><a href="#!" class="footer__list-link">Favorite
+								</a></li>
+							<li class="footer__list-item"><a href="#!" class="footer__list-link">My Collections
+								</a></li>
+							<li class="footer__list-item"><a href="#!" class="footer__list-link">Settings
+								</a></li>
+						</ul>
+					</div>
+					<div class="footer__details details-footer">
+						<h4 class="details-footer__sub-title">Stay in the loop</h4>
+
+						<div class="details-footer__descr">
+							<p>
+								Join our mailing list to stay in the loop with our newest feature releases, NFT drops, and
+								tips
+								and tricks for
+								navigating NFTs.
+							</p>
+						</div>
+						<form class="details-footer__form form-footer" action="#" aria-label="Newsletter subscription form">
+							<input autocomplete="off" type="email" data-error="Error" placeholder="Enter your email address.." class="form-footer__input" aria-label="Email address" />
+							<button class="form-footer__button" type="submit" aria-label="Subscribe to newsletter">Subscribe
+								Now</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="footer__copy">
+					Copyright © 2022 Avi Yansah
+				</div>
+
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20250129110508"></script>
+</body>
+
+</html>
